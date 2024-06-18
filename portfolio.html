@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+/* Header Section */
+
+li, a{
+    color: white;
+}
+
+li,a:hover{
+    color: #ff2525;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo{
+    width: 120px;
+}
+
+
+.nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+button{
+    background-color: rgb(129, 2, 2);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/* Header Section */
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btan {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #a10d0d;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #810404;
+    color: white;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #a10d0d;
+}
+
+/* Skill Section */
+.svg{
+    margin-top: -280px;
+}
+
+.skills {
+    padding: 50px 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -6.1px;
+}
+
+.skills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.progress {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.progress.html {
+    width: 90%;
+    background-color: #e44d26;
+}
+
+.progress.css {
+    width: 85%;
+    background-color: #264de4;
+}
+
+.progress.js {
+    width: 75%;
+    background-color: #f0db4f;
+    color: #000;
+}
+
+.progress.react {
+    width: 70%;
+    background-color: #61dbfb;
+    color: #000;
+}
+
+.progress.node {
+    width: 65%;
+    background-color: #68a063;
+}
+
+
+
+
+
+/* about Section */
+
+.aboutsvg{
+    margin-top: -250px;
+}
+
+
+
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin-top: -4.5cm;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+    margin: 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+
+
+
+.contact {
+    padding: 50px 20px;
+    background-color: #a10d0d;
+    color: white;
+    text-align: center;
+    margin-top: -7px;
+}
+
+.contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -6cm;
+    margin-bottom: 5px;
+    height: 18cm;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* footer Section */
+
+.footsvg{
+    margin-top: -7cm;
+}
+
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: -7px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -4cm;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    background-color: #000;
+    color: white;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="logo" class="logo">
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Skill">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+        <a href="#contactme" class="cta"><button>Contact Me</button></a>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi, I'm Alok Vivan, a web developer and designer. I create modern and responsive web applications.</p>
+                <a href="#" class="btan">Download Resume</a>
+            </div>
+            <div class="image">
+                <img src="alokvivan alokankit iamalokvivan alok vivan.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+
+    <section id="Skill" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress html">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress css">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress js">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar">
+                    <div class="progress react">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <div class="progress-bar">
+                    <div class="progress node">65%</div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,64L80,74.7C160,85,320,107,480,138.7C640,171,800,213,960,208C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
+
+
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="IMG_20231209_144350.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Alok Vivan, a passionate web developer and designer based in Chandigarh. With several years of experience in creating modern, responsive, and user-friendly web applications, I strive to deliver high-quality work that exceeds client expectations. My expertise lies in HTML, CSS, JavaScript, and various frameworks like React and Node.js.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, reading about the latest industry trends, or enjoying outdoor activities. Let's work together to bring your ideas to life!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a10d0d" fill-opacity="1" d="M0,64L80,53.3C160,43,320,21,480,32C640,43,800,85,960,117.3C1120,149,1280,171,1360,181.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    
+
+
+    <section class="contact" id="contactme">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <svg class="footsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,128L30,149.3C60,171,120,213,180,208C240,203,300,149,360,144C420,139,480,181,540,186.7C600,192,660,160,720,165.3C780,171,840,213,900,218.7C960,224,1020,192,1080,186.7C1140,181,1200,203,1260,197.3C1320,192,1380,160,1410,144L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Me</h2>
+                    <p>I am a web developer and designer creating modern and responsive web applications.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#Skill">Skills</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contactme">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Me</h2>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alok Vivan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+</body>
+</html>
